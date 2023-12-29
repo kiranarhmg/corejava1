@@ -1,0 +1,1 @@
+	enum GlassType{CONCAVE,CONVEX}

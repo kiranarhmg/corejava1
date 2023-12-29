@@ -1,0 +1,3 @@
+enum AppType{
+	STANDALONE,WEB,DESKTOP
+}
