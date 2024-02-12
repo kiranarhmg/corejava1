@@ -2,10 +2,7 @@ package com.xworkz.collection.collectionExample;
 
 import com.xworkz.collection.sort.*;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 public class PaperDtoRunner {
     public static void main(String[] args) {
@@ -84,6 +81,7 @@ public class PaperDtoRunner {
             System.out.println(val);
         }
         System.out.println("**********************************************");
+
 
 
     }

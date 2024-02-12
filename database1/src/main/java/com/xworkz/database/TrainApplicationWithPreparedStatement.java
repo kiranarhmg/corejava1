@@ -12,7 +12,7 @@ public class TrainApplicationWithPreparedStatement {
         String url = "jdbc:mysql://localhost:3306/bankapplication";
         String userName = "root";
         String password = "Xworkzodc@123";
-        String sql = "insert into train values(?,?,?,?)";
+        String sql = "select * from train";
 
         Connection connection = null;
         PreparedStatement preparedStatement = null;
@@ -21,10 +21,7 @@ public class TrainApplicationWithPreparedStatement {
             connection = DriverManager.getConnection(url, userName, password);
 
             preparedStatement = connection.prepareStatement(sql);
-            preparedStatement.setInt(1, 101);
-            preparedStatement.setString(2, "vande bharat");
-            preparedStatement.setString(3, "banglore");
-            preparedStatement.setString(4, "hubbli");
+           
             ResultSet re = preparedStatement.executeQuery();
             while (re.next()) {
                 System.out.println(re.getInt("trainid"));

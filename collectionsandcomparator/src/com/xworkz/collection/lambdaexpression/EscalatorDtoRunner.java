@@ -2,6 +2,7 @@ package com.xworkz.collection.lambdaexpression;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class EscalatorDtoRunner {
@@ -16,8 +17,9 @@ public class EscalatorDtoRunner {
         list.add(escalatorDTO2);
         list.add(escalatorDTO3);
         list.add(escalatorDTO4);
+        Comparator<EscalatorDTO> comparator=(l1,l2)->{return Double.compare(l1.getSpeed(), l2.getSpeed()); };
 
-        Collections.sort(list,(l1, l2)->(Double.compare(l1.getSpeed(), l2.getSpeed())));
+        Collections.sort(list,comparator);
         System.out.println("speed in asc");
         for (EscalatorDTO val:list
         ) {
