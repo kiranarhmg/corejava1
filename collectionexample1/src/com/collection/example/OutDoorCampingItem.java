@@ -33,8 +33,9 @@ public class OutDoorCampingItem {
       list.forEach(l-> System.out.println(l.toUpperCase()));
 
         System.out.println("*********count of list ***********");
-       long len= campingItems.stream().filter(ref->ref.contains("t")).count();
-       System.out.println(len);
+      /* long len= */
+        System.out.println(campingItems.stream().filter(ref->ref.contains("t")).count());
+     /*  System.out.println(len);*/
 
         System.out.println("********* item which has 'a' and 'o' ***********");
         campingItems.stream().filter(ref->ref.contains("a")&&ref.contains("o")).sorted().forEach(r-> System.out.println(r));
