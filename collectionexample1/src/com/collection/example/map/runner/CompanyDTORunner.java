@@ -43,6 +43,8 @@ public class CompanyDTORunner {
         System.out.println(map.isEmpty());
         System.out.println(map.size());
 
+        System.out.println(map.get(companyDTO1));
+
 
 
 
